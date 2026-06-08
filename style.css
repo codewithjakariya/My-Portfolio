@@ -1,0 +1,487 @@
+/* ===============================
+   1. RESET & GLOBAL
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    background: #f8f9ff;
+    color: #0e0e0e;
+    line-height: 1.6;
+}
+
+/* ===============================
+   2. CONTAINER
+================================= */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===============================
+   3. BUTTON SYSTEM
+================================= */
+.btn {
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, #872bff, #6a14da);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(135, 43, 255, 0.25);
+}
+
+.btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(135, 43, 255, 0.35);
+}
+
+.btn.outline {
+    background: transparent;
+    border: 2px solid #872bff;
+    color: #872bff;
+}
+
+.btn.outline:hover {
+    background: #872bff;
+    color: #fff;
+}
+
+/* ===============================
+   4. HEADING
+================================= */
+.heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.heading h4 {
+    color: #872bff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.heading h2 {
+    font-size: 38px;
+    font-weight: 700;
+
+}
+
+/* ===============================
+   5. HERO SECTION
+================================= */
+#hero {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f3ecff, #ffffff);
+    background-image: url("image/Hero-bg.png");
+
+}
+
+#hero-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#hero-content {
+    flex: 1;
+}
+
+#hero-content h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+#hero-content span {
+    color: #872bff;
+}
+
+#hero-content p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: flex;
+}
+
+#hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+#hero-image img {
+    max-width: 450px;
+    width: 100%;
+}
+
+
+/* ==========================================
+   6. Skill Section
+   ========================================== */
+#skill {
+    margin-bottom: 100px;
+}
+
+.card-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px; /* Alada margin meshano bondho kora hoyeche */
+}
+
+.card {
+    background-color: white;
+    padding: 40px 30px;
+    text-align: center;
+    flex: 1; /* Card gulo soman bhabe space nibe */
+    min-height: 310px; /* Content thakle height automatic barbe */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #bdbac1;
+    border: 1px solid #872BFF;
+}
+
+.card * {
+    margin-bottom: 15px;
+}
+
+.card img {
+    height: 60px; /* Icon/Logo wrapper geometry control korar jonno */
+    object-fit: contain;
+}
+
+.card h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.card a {
+    color: #872BFF;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+/* ==========================================
+   7. Projects Section
+   ========================================== */
+#projects {
+    padding: 100px 0;
+    margin-bottom: 100px;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-card {
+    padding: 48px;
+    background-color: white;
+    border: 1px solid rgba(135, 43, 255, 0.2);
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
+}
+
+.project-img {
+    flex: 1;
+}
+
+.project-img img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-content * {
+    margin-bottom: 20px;
+}
+
+.project-content *:last-child {
+    margin-bottom: 0; /* Last element er nicher extra padding shorano holo */
+}
+
+.project-content h3 {
+    font-size: 32px;
+    color: #0E0E0E;
+}
+
+.project-content p {
+    color: rgba(14, 14, 14, 0.7);
+    line-height: 1.6;
+}
+
+.project-date {
+    font-weight: 600;
+    color: #872BFF !important;
+}
+
+/* ===============================
+   8. EXPERIENCE
+================================= */
+
+#exprience {
+    margin-bottom: 100px;
+}
+
+.company-card {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.brands {
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 4px #00000025;
+    border-radius: 20px;
+}
+
+.btn-container {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.brands:hover {
+    transform: translateY(-5px);
+    background-color: #bdbac1;
+    border: 1px solid #872BFF;
+    transition: all 1s;
+}
+
+/* ===============================
+   9. FOOTER
+================================= */
+.main-footer {
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: #777;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons img {
+    width: 24px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* ===============================
+   10. BUTTON
+================================= */
+
+.btn {
+    background-color: #872BFF;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 11px 31px 0 rgba(140, 140, 140, 0.3); /* Subtle Shadow */
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6A14DA;
+    transform: translateY(-3px);
+}
+
+
+/* ===============================
+   11. RESPONSIVE
+================================= */
+/*
+@media (max-width: 992px) {
+    #hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-image {
+        text-align: center;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .card-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-box {
+        grid-template-columns: 1fr;
+    }
+
+    .heading h2 {
+        font-size: 28px;
+    }
+
+    #hero-content h1 {
+        font-size: 36px;
+    }
+} */
+
+
+/* ==========================================
+   11. RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================== */
+
+/* --- ট্যাবলেট এবং বড় স্ক্রিনের ডিভাইস (Max-width: 992px) --- */
+@media screen and (max-width: 992px) {
+    #hero-container {
+        flex-direction: column-reverse; /* ইমেজ উপরে এবং টেক্সট নিচে যাবে */
+        text-align: center;
+        gap: 30px;
+    }
+
+    #hero-image {
+        text-align: center;
+    }
+
+    .hero-btn {
+        justify-content: center; /* বাটনগুলো সেন্টারে থাকবে */
+    }
+
+    .btn {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #hero-content h1 {
+        font-size: 42px; /* টেক্সট সাইজ কিছুটা কমানো হলো */
+    }
+
+    .heading h2 {
+        font-size: 32px;
+    }
+
+    /* স্কিল সেকশনের ৩টি কার্ডের ফ্লেক্স বক্সকে গ্রিডে রূপান্তর (২টি করে দেখাবে) */
+    .card-box {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* প্রজেক্ট কার্ডগুলোকে উপর-নিচ করা */
+    .project-card {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /* HTML-এ যে ২ নম্বর প্রজেক্টের ইমেজ ডানে ছিল, সেটাকেও মোবাইলে অর্ডারে ঠিক করা */
+    .project-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .project-img img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* --- ছোট মোবাইল ডিভাইস (Max-width: 600px) --- */
+@media screen and (max-width: 600px) {
+    #hero {
+        padding: 60px 0;
+    }
+
+    #hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-btn {
+        flex-direction: column; /* মোবাইলে বাটন একটির নিচে আরেকটি আসবে */
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%; /* বাটন ফুল উইডথ হবে */
+        margin: 0;
+    }
+
+    .heading h2 {
+        font-size: 26px;
+    }
+
+    .heading h4 {
+        font-size: 16px;
+    }
+
+    /* ফুটার রেসপনসিভ (কপিরাইট উপরে, আইকন নিচে) */
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .project-content h3 {
+        font-size: 24px;
+    }
+}
