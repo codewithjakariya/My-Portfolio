@@ -225,7 +225,7 @@ body {
 .project-img img {
     width: 100%;
     max-width: 450px;
-    height: auto;
+    height: 245px;
     border-radius: 15px;
     display: block;
 }
